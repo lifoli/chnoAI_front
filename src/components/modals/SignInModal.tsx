@@ -58,7 +58,7 @@ export function SignInModal() {
               </Button>
             </div>
             <div>
-              <h6 className="text-xs font-thin text-[#A1A1AA]">
+              <h6 className="text-xs font-light text-[#A1A1AA]">
                 By logging in, you agree to all the policies below.
               </h6>
             </div>
