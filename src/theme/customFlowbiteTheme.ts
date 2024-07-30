@@ -5,24 +5,24 @@ export const SidebarCustomTheme: CustomFlowbiteTheme = {
     root: {
       base: "h-full bg-gray-800",
       inner:
-        "h-full overflow-y-auto overflow-x-hidden rounded bg-[#1E202A] py-4 px-3",
+        "h-full overflow-y-auto overflow-x-hidden rounded bg-[#1E202A] py-3 px-0",
       collapsed: {
-        on: "w-16",
+        on: "w-12",
         off: "w-60",
       },
     },
     item: {
-      base: "flex items-center justify-center rounded-lg py-2 text-base font-normal text-[#9EA7B0] hover:bg-gray-700 hover:text-white",
+      base: "flex items-center justify-center py-2 px-2 w-full text-base font-normal text-[#9EA7B0] hover:bg-gray-700 hover:text-white",
       icon: {
         base: "h-6 w-6 flex-shrink-0 text-[#9EA7B0] transition duration-75 group-hover:text-white",
         active: "text-white",
       },
     },
     itemGroup: {
-      base: "mt-4 space-y-2 border-t border-gray-700 pt-4 first:mt-0 first:border-t-0 first:pt-0",
+      base: "mt-4 space-y-1 border-t border-gray-700 pt-4 first:mt-0 first:border-t-0 first:pt-0",
     },
     logo: {
-      base: "flex items-center",
+      base: "flex items-center pl-2",
       collapsed: {
         on: "hidden",
         off: "self-center whitespace-nowrap text-xl font-semibold dark:text-white",

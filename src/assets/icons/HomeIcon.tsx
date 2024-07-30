@@ -9,7 +9,7 @@ interface HomeIconProps {
 }
 
 export const HomeIcon: React.FC<HomeIconProps> = ({
-  size = "w-6 h-6",
+  size = "w-5 h-5",
   color = "#9EA7B0",
   hoverColor = "white",
 }) => {

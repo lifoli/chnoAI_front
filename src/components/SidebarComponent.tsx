@@ -18,6 +18,7 @@ import { SidebarCustomTheme } from "../theme/customFlowbiteTheme";
 import { HomeIcon } from "../assets/icons/HomeIcon";
 import { BookIcon } from "../assets/icons/BookIcon";
 import NewKnowledgeButton from "./NewKnowledgeButton";
+import LoginButton from "./LoginButton";
 
 export function Component() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -37,7 +38,7 @@ export function Component() {
             collapsed={isCollapsed}
             className={`fixed left-0 top-0 z-40 h-screen`}
           >
-            <div className="flex h-5 items-center justify-between bg-green-500 ">
+            <div className="flex h-5 items-center justify-between">
               <Sidebar.Logo
                 href="/"
                 img={Chno_logo}
@@ -49,7 +50,7 @@ export function Component() {
                 )}
               </Sidebar.Logo>
               <Button color="gray" className="" onClick={onClick2}>
-                <HiX className="h-4 w-4" />
+                <HiX className="size-4" />
               </Button>
             </div>
             <Sidebar.Items>
@@ -61,6 +62,7 @@ export function Component() {
                 <Sidebar.Item href="/dashboard" icon={BookIcon}>
                   My knowledge
                 </Sidebar.Item>
+                {isCollapsed ? null : <LoginButton />}
               </Sidebar.ItemGroup>
             </Sidebar.Items>
           </Sidebar>
@@ -75,7 +77,7 @@ export function Component() {
                 isCollapsed ? "left-12" : "left-60"
               }`}
             >
-              <HiMenu className="h-5 w-5 " />
+              <HiMenu className="size-5 " />
             </Button>
           ) : (
             <Button
