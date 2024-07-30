@@ -7,7 +7,7 @@ import { SidebarCustomTheme } from "../theme/customFlowbiteTheme";
 import { HomeIcon } from "../assets/icons/HomeIcon";
 import { BookIcon } from "../assets/icons/BookIcon";
 import NewKnowledgeButton from "./NewKnowledgeButton";
-import LoginButton from "./LoginButton";
+import SignInButton from "./SignInButton";
 import { isSidebarCollapsedAtom } from "../recoil/IsSidebarCollapesd";
 import { useRecoilState } from "recoil";
 
@@ -55,7 +55,7 @@ export function Component() {
                 <Sidebar.Item href="/dashboard" icon={BookIcon}>
                   My knowledge
                 </Sidebar.Item>
-                {isSidebarCollapsed ? null : <LoginButton />}
+                {isSidebarCollapsed ? null : <SignInButton />}
               </Sidebar.ItemGroup>
             </Sidebar.Items>
           </Sidebar>
