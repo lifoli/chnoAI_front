@@ -6,11 +6,14 @@ import App from "./App";
 import "./index.css";
 
 import Layout from "./components/Layout";
+import { RecoilRoot } from "recoil";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <Layout>
-      <App />
-    </Layout>
-  </React.StrictMode>,
+  <RecoilRoot>
+    <React.StrictMode>
+      <Layout>
+        <App />
+      </Layout>
+    </React.StrictMode>
+  </RecoilRoot>,
 );
