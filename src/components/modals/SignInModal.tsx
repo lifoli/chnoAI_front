@@ -33,15 +33,15 @@ export function SignInModal() {
             />
             <div className="flex flex-col items-center">
               <h3 className="text-lg font-light text-gray-900 dark:text-white">
-                Log in within 10 seconds and
+                Sign up now and try unlimited
               </h3>
               <div className="flex space-x-1">
                 <h3 className="text-lg font-light text-gray-900 dark:text-white">
-                  summarize
+                  summarization for free
                 </h3>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                {/* <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                   unlimitedly for free!
-                </h3>
+                </h3> */}
               </div>
             </div>
 
